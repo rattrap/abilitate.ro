@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
     render() {
@@ -9,7 +10,9 @@ class Header extends Component {
                     <div class="navbar-menu" id="navMenu">
                         <div class="navbar-end">
                             <div class="navbar-item">
-                                <p class="control"><a class="button is-primary is-rounded" href="/add"><span>Adaugă Anunț</span></a></p>
+                                <p class="control">
+                                    <Link to="/add" className="button is-primary is-rounded"><span>Adaugă Anunț</span></Link>
+                                </p>
                             </div>
                         </div>
                     </div>
